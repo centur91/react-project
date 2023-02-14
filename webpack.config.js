@@ -32,5 +32,9 @@ module.exports = {
       xhtml: true
     }),
     new MiniCssExtractPlugin()
-  ]
+  ],
+  devServer: {
+    watchFiles: path.resolve(__dirname, 'src'),
+    port: 9000
+  }
 };
